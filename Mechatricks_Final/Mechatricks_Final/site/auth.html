@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acceso — mechatricks</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="raiz-diseno">
+    <header class="encabezado-diseno" id="encabezado-diseno"></header>
+    <main class="principal">
+      <div class="seccion-acceso">
+        <h1 class="titulo">Bienvenido</h1>
+        <p class="subtitulo">Accede para guardar tus rutas.</p>
+
+        <div class="formulario-acceso">
+          <div class="pestanas-autenticacion">
+            <button id="pestaña-iniciar-sesion" class="pestaña activa">Iniciar sesión</button>
+            <button id="pestaña-registrarse" class="pestaña">Registrarse</button>
+          </div>
+
+          <form id="formulario-autenticacion" class="formulario-autenticacion">
+            <div class="grupo-formulario" id="grupo-nombre" style="display: none">
+              <label class="etiqueta-formulario">nombre</label>
+              <input id="entrada-nombre" class="entrada-formulario">
+            </div>
+            <div class="grupo-formulario">
+              <label class="etiqueta-formulario">correo</label>
+              <input type="email" required id="entrada-correo" class="entrada-formulario">
+            </div>
+            <div class="grupo-formulario">
+               <label class="etiqueta-formulario">contraseña</label>
+               <input type="password" required minlength="6" id="entrada-contraseña" class="entrada-formulario">
+            </div>
+
+            <p id="error-formulario" class="error-formulario" style="display: none"></p>
+
+            <button type="submit" id="boton-enviar" class="boton boton-principal boton-enviar">Iniciar sesión</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="assets/js/pages/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MECHATRICKS</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="raiz-diseno">
+    <header class="encabezado-diseno" id="encabezado-diseno"></header>
+
+    <main class="principal">
+      <section class="seccion inicio">
+        <div class="banner-principal">
+          <div class="logo-banner">
+            <img src="assets/MECHATRICKS.png" alt="Mechatricks logo">
+          </div>
+          <h1 class="titulo">MECHATRICKS</h1>
+          <p class="copia-banner">
+            Aprende electrónica desde cero de manera interactiva. Responde preguntas y recibe
+            recursos personalizados para tu aprendizaje junto a un asistente técnico basado en IA para
+            resolver tus dudas.
+          </p>
+
+          <div class="acciones-banner">
+            <a href="diagnostico.html" class="boton boton-principal">Iniciar diagnóstico</a>
+            <a href="modulos.html" class="boton boton-secundario">Ver módulos</a>
+          </div>
+        </div>
+
+        <div class="cuadricula-resumen">
+          <article class="caracteristica">
+            <h3 class="titulo">Módulos</h3>
+            <p class="descripcion-caracteristica">Contenido organizado por entradas, procesos y salidas.</p>
+          </article>
+          <article class="caracteristica">
+            <h3 class="titulo">Recursos</h3>
+            <p class="descripcion-caracteristica">Videos, guías y PDFs de referencia técnica.</p></article>
+          <article class="caracteristica">
+            <h3 class="titulo">Asistente</h3>
+            <p class="descripcion-caracteristica">Bot técnico para preguntas sobre Arduino e IoT.</p>
+          </article>
+        </div>
+
+        <div class="como-funciona">
+          <h2 class="encabezado">¿Cómo funciona?</h2>
+          <p class="copia-seccion">
+            En tres simples pasos estarás aprendiendo mecatrónica de forma personalizada.
+          </p>
+
+          <div class="cuadricula-pasos">
+            <article class="paso">
+              <h3 class="titulo">Selecciona tus temas</h3>
+              <p class="descripcion-paso">Elige los problemas o áreas de mecatrónica que te interesan o donde tienes dudas.</p>
+            </article>
+            <article class="paso">
+              <h3 class="titulo">Recibe Recursos</h3>
+              <p class="descripcion-paso">Obtén material educativo personalizado: videos, tutoriales y guías prácticas.</p>
+            </article>
+            <article class="paso">
+              <h3 class="titulo">Pregunta al Asistente</h3>
+              <p class="descripcion-paso">Usa nuestro chatbot especializado para resolver cualquier duda técnica sobre Arduino e IoT.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module">
+    import { inicializarDiseno } from "./assets/js/layout.js";
+    inicializarDiseno("index.html");
+  </script>
+</body>
+</html>
